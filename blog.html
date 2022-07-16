@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+</html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduford.com</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+   
+</head>
+<body>
+   <section class="sub-header">
+       <nav>
+           <!--Untuk menampilkan logo-->
+           <a href="index.html"><img src="eduford_img/logo.png"></a>
+           <div class="nav-links" id="navLinks">
+            <i class="fa fa-xmark" onclick="hideMenu()"></i> <!--Icons close untuk Mobile display-->
+               <ul>
+               <!--Untuk menampilkan Menu-->    
+               <li><a href="index.html">HOME</a></li>
+               <li><a href="about.html">ABOUT</a></li>
+               <li><a href="course.html">COURSE</a></li>
+               <li><a href="blog.html">BLOG</a></li>
+               <li><a href="contact.html">CONTACT</a></li>                     
+               </ul>
+           </div>
+           <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+       </nav>
+
+       <h1>Our Certificate & Online Programs For 2022</h1>
+   </section>
+   <!--Blog Page-->
+   <section class="blog-content">
+       <div class="row">
+          <div class="blog-left">
+              <img src="eduford_img/certificate.jpg" />
+              <h2>Our Certificate</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi labore error dolorum architecto, ullam expedita debitis iusto cum rerum dolorem.</p>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Tenetur necessitatibus voluptas, animi illum illo quisquam consequuntur, pariatur odit, quibusdam doloribus facere sequi. Sint ad temporibus, aperiam deserunt illo sapiente aspernatur.</p>
+              <br>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, delectus quasi. Dignissimos quisquam facilis, dicta temporibus id deserunt consequatur mollitia!</p>
+
+              <div class="comment-box">
+                  <h3>Leave a Comment</h3>
+
+                  <form class="comment-form">
+                      <input type="text" placeholder="Enter Name">
+                      <br><br>
+                      <input type="Email" placeholder="Enter Email">
+                      
+                      <textarea rows="5" placeholder="Your Comment"></textarea>
+                      
+                      <button type="submit" class="visit-Btn red-Btn">POST COMMENT</button>
+                  </form>
+              </div>
+
+          </div>
+          <div class="blog-right">
+          <h3>Post Categories</h3>
+          <div>
+              <span>Bussines Analytics</span>
+              <span>25</span>
+          </div>
+          <div>
+            <span>Data Scientics</span>
+            <span>30</span>
+        </div>
+        <div>
+            <span>Machine Learning</span>
+            <span>29</span>
+        </div>
+        <div>
+            <span>Computer Science</span>
+            <span>30</span>
+        </div>
+       </div>
+    </div>
+   </section>
+
+
+<section class="footer">
+    <h4>About US</h4>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> Asperiores error nam, ratione optio earum cupiditate, id itaque non, totam nulla omnis eius et neque vero deserunt maxime ex.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Made With <i class="fa fa-heart-o"> Easy Tutorials</i></p>
+</section>
+
+
+
+   <!-----JavaScript for Toggle Menu------->
+   <!--Perintah untuk memunculkan dan menutup icons pada tampilan-->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+
+</body>
+</html>
